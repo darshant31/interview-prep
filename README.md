@@ -93,7 +93,8 @@ Once the page is loaded, the browser sends further async requests as needed.
 20. ### What is a Higher Order Component ? Give example and explain the use cases where it should be used.
      Answer To be added
 21. ### How to deep clone a object in javascript ?
-     Answer To be added
+     Assuming that you only have variables and not have any functions in your object,just use:
+		var NewObject = JSON.parse(JSON.stringify(OldObject));
 22. ### Implement a singleton class in Javascript.
      Answer To be added
 23. ### Lifecycle hooks of react with use of each hook?
@@ -101,7 +102,16 @@ Once the page is loaded, the browser sends further async requests as needed.
 24. ### Does react component only update on state change or also on prop change ?
      Answer To be added
 25. ### How to start a new Angular project from cli ?
-     Answer To be added
+     Step-1: Install angular cli
+		npm install - g @angular/cli
+	Step-2: Create new project by this command : Choose yes for routing option and, CSS or SCSS.
+		ng new myNewApp
+	Step-3: Go to your project directory
+		cd myNewApp
+	Step-4: Run server and see your application in action
+		ng serve -o --poll=2000
+
+		
 
 
 
