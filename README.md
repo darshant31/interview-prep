@@ -93,8 +93,39 @@ Once the page is loaded, the browser sends further async requests as needed.
 20. ### What is a Higher Order Component ? Give example and explain the use cases where it should be used.
      Answer To be added
 21. ### How to deep clone a object in javascript ?
-     Assuming that you only have variables and not have any functions in your object,just use:
-		var NewObject = JSON.parse(JSON.stringify(OldObject));
+     	(1)Assuming that you only have variables and not have any functions in your object,just use:
+		var NewObject = JSON.parse(JSON.stringify(OldObject));	
+	(2)Copying an object with the Object.assign() method
+		Syntax:
+		const copied = Object.assign(target, ...sources)
+		Parameters:
+		target – target object to which values and properties are copied
+		sources – source object from which values and properties are copied
+		Return value:This method returns the target object.
+		Example:
+		let objectA = {a: 1, b: 2}
+		let objectB = {c: 3, d: 4}
+		Object.assign(objectA, objectB)
+		console.log(objectA);
+		// → { a: 1, b: 2, c: 3, d: 4 }
+		
+
+
+	(3)Copying an object with the spread syntax
+		Syntax:
+		const copied = { ...original }
+		Example:
+		const objA = { 
+		    name: 'Alexander', 
+		    age: 26, 
+		}
+		const objB = { 
+		    Licensed: true, 
+		    location: "Ikeja" 
+		}
+		const mergedObj = {...objA, ...objB}
+		console.log(mergedObj) 		
+		
 22. ### Implement a singleton class in Javascript.
      Answer To be added
 23. ### Lifecycle hooks of react with use of each hook?
